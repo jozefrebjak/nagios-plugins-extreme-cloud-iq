@@ -51,7 +51,7 @@ And there is a command.
 ```
 define command {
   command_name                   check_ap
-  command_line                   $USER1$/check_ap_status.sh $HOSTALIAS$ # I'm using $HOSTALIAS$. You can user directly $HOSTNAME$
+  command_line                   $USER1$/check_ap_status.sh $HOSTALIAS$ # I'm using $HOSTALIAS$. You can use directly $HOSTNAME$
 }
 ```
 
