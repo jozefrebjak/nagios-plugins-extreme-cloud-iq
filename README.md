@@ -1,4 +1,4 @@
-![ExtremeCloud IQ](https://www.extremenetworks.com/wp-content/uploads/2019/10/xIQ.screen.01_new-1.png =250x)
+![ExtremeCloud IQ](https://www.extremenetworks.com/wp-content/uploads/2019/10/xIQ.screen.01_new-1.png)
 
 # check_ap_status
 
