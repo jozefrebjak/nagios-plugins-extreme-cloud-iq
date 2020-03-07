@@ -1,3 +1,5 @@
+![ExtremeCloud IQ](https://www.extremenetworks.com/wp-content/uploads/2019/10/xIQ.screen.01_new-1.png)
+
 # check_ap_status
 
 With this plugin you can get status of your AP's connected to the ExtremeCloud IQ (formerly Aerohive).
