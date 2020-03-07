@@ -33,6 +33,34 @@ If is your AP **down** then you will get message like:
 CRITICAL: AP_650X is not connected to the Cloud.|Status=0;;0;1;
 ```
 
+You can setup nagios service to check status of AP like:
+
+```
+# Check AP Status via Cloud API
+define service {
+  service_description            Status
+  hostgroup_name                 YOUR_HOSTGROUP
+# servicegroups			             ExtremeCloud-IQ-Status # I'm using also servicegroups
+  use                            generic-service,srv-perf # I'm using OMD with Graphana, so I am using srv-perf for graphing 
+  check_command                  check_ap
+}
+```
+
+And there is a command.
+
+```
+define command {
+  command_name                   check_ap
+  command_line                   $USER1$/check_ap_status.sh $HOSTALIAS$ # I'm using $HOSTALIAS$. You can user directly $HOSTNAME$
+}
+```
+
+
+This is how service looks like in a Thruk UI.
+
+![check_ap_status Service](/screenshots/check_ap_status_nagios_service.png)
+
+
 This script also has a support of perf data so you can get nice graphs.
 
 
